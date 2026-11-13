@@ -1,0 +1,32 @@
+
+# Python
+.venv/
+.venv*/
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Dataset and experiment results
+dataset/
+results/
+
+# Model checkpoints: keep only required inference models
+models/*
+!models/mobilenetv3_full39_best.pth
+!models/leaf_validator_v3_best.pth
+
+# Obsolete model implementations
+backend/ml_model_backup.py
+backend/ml_model_ood_backup.py
+backend/ml_model_with_ood.py
+
+# Environment files
+.env
+.env.*
+!.env.example
